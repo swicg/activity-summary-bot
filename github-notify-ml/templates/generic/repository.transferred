@@ -1,3 +1,0 @@
-{{repository.full_name}} transferred from {{from}} to {{repository.owner.login}} by {{sender.login}}
-{{{sender.login}}} has just transferred the repository {{{repository.name}}} from {{from}} to {{repository.owner.login}}
-  https://github.com/{{repository.full_name}}

@@ -1,2 +1,0 @@
-{{repository.full_name}} deleted by {{sender.login}}
-{{{sender.login}}} has just deleted the repository {{{repository.full_name}}}
