@@ -1,0 +1,6 @@
+{
+  "TEMPLATES_DIR": "templates",
+  "DIGEST_SENDER": "Repository Activity Summary Bot",
+  "SIGNATURE": "SWICG W3C Mailing List -- https://lists.w3.org/Archives/Public/public-swicg/",
+  "mls": "instance/mls.json"
+}

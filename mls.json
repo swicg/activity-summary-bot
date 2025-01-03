@@ -1,0 +1,35 @@
+{
+  "public-swicg@w3.org": {
+    "digest:sunday": {
+      "eventFilter": {
+        "notlabel": ["editorial"]
+      },
+      "repos": [
+        "w3c/activitypub",
+        "w3c/activitystreams",
+        "swicg/general",
+        "swicg/meetings",
+        "swicg/processes",
+        "swicg/potential-charters",
+        "swicg/www",
+        "swicg/.github",
+        "swicg/ap-test-suite-taskforce",
+        "swicg/activitystreams2-owl",
+        "swicg/extensions-policy",
+        "swicg/activitypub-webfinger",
+        "swicg/activitypub-http-signature",
+        "swicg/activitypub-data-portability",
+        "swicg/miscellany",
+        "swicg/forums",
+        "swicg/activitypub-e2ee",
+        "swicg/activitypub-html-discovery",
+        "swicg/activitypub-trust-and-safety",
+        "swicg/activitypub-website-taskforce",
+        "swicg/activitypub.rocks",
+        "swicg/geosocial",
+        "swicg/groups"
+      ],
+      "topic": "GitHub Activity Summary"
+    }
+  }
+}
