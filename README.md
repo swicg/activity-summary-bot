@@ -6,4 +6,4 @@ This repo e-mails weekly summaries of GitHub repository activity to SWICG W3C ma
 
 Activity summaries will be e-mailed weekly.
 
-Last updated: 15 May 2025
+Last updated: 14 July 2025
