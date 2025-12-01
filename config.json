@@ -1,6 +1,7 @@
 {
   "TEMPLATES_DIR": "templates",
+  "EMAIL_FROM": "activitybot@socialcg.org"
   "DIGEST_SENDER": "Repository Activity Summary Bot",
   "SIGNATURE": "SWICG W3C Mailing List -- https://lists.w3.org/Archives/Public/public-swicg/",
-  "mls": "instance/mls.json"
+  "mls": "instance/mls.json",
 }
