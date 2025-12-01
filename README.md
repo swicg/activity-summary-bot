@@ -6,4 +6,5 @@ This repo e-mails weekly summaries of GitHub repository activity to SWICG W3C ma
 
 Activity summaries will be e-mailed weekly.
 
-Last updated: 14 July 2025
+> [!IMPORTANT]
+> The server that runs this repository is sponsored by by [Superior-Networks](https://superior-networks.com/) who kindly provide the VPS.
