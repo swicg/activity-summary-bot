@@ -1,53 +1,98 @@
 {
-    "$schema": "http://json-schema.org/schema#",
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "additionalProperties": {
     "type": "object",
-    "additionalProperties": {
+    "patternProperties": {
+      "^(digest:\\w+|https:(.+)|[0-9a-zA-z.\\-_]+/[0-9a-zA-z.\\-_]+)$": {
         "type": "object",
-        "required": ["digest:sunday"],
+        "required": ["topic"],
         "properties": {
-            "digest:sunday": {
-                "type": "object",
-                "required": ["topic", "repos"],
-                "properties": {
-                    "topic": {
-                        "type": "string",
-                        "minLength": 4
-                    },
-                    "repos": {
-                        "type": "array",
-                        "items": {
-                            "type": "string",
-                            "pattern": "^[0-9a-zA-z.\\-_]+/[0-9a-zA-z.\\-_]+$",
-                            "minItems": 1,
-                            "uniqueItems": true
-                          }
-                    },
-                    "eventFilter": {
-                        "type": "object",
-                        "properties": {
-                            "label": {
-                                "type": "array",
-                                "items": {
-                                    "type": "string",
-                                    "minItems": 1,
-                                    "uniqueItems": true
-                                }
-                            },
-                            "notlabel": {
-                                "type": "array",
-                                "items": {
-                                    "type": "string",
-                                    "minItems": 1,
-                                    "uniqueItems": true
-                                }
-                            }
-                        },
-                        "additionalProperties": false                        
+          "topic": {
+            "type": "string",
+            "minLength": 4
+          },
+          "repos": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[0-9a-zA-z.\\-_]+/[0-9a-zA-z.\\-_]+$",
+              "minItems": 1,
+              "uniqueItems": true
+              }
+          },
+          "repoList": {
+            "type": "string",
+            "minLength": 1
+          },
+          "eventFilter": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minItems": 1,
+                  "uniqueItems": true
+                }
+              },
+              "notlabel": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minItems": 1,
+                  "uniqueItems": true
+                }
+              }
+            },
+            "additionalProperties": false            
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "repos": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[0-9a-zA-z.\\-_]+/[0-9a-zA-z.\\-_]+$",
+                    "minItems": 1,
+                    "uniqueItems": true
                     }
                 },
-                "additionalProperties": false
+                "repoList": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "eventFilter": {
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minItems": 1,
+                        "uniqueItems": true
+                      }
+                    },
+                    "notlabel": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minItems": 1,
+                        "uniqueItems": true
+                      }
+                    }
+                  },
+                  "additionalProperties": false            
+                }
+              }
             }
+          }
         },
         "additionalProperties": false
+      }
     }
+  }
 }
