@@ -7,7 +7,7 @@
           "repoList": "https://raw.githubusercontent.com/swicg/activity-summary-bot/refs/heads/main/repositories.json",
           "eventFilter": {
             "notlabel": ["editorial", "skip-digest"]
-          },
+          }
         }
       ]
     }
