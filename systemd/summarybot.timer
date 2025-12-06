@@ -1,0 +1,11 @@
+[Unit]
+Description="Run summarybot digest.sh at regular interval"
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=24h
+OnCalendar=Sun *-*-* 12:00:*
+Unit=summarybot.service
+
+[Install]
+WantedBy=default.target
