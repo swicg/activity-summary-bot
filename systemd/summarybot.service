@@ -1,0 +1,12 @@
+[Unit]
+Description="Send activity summary email"
+
+[Service]
+Type=oneshot
+User=summarybot
+Group=summarybot
+WorkingDirectory=/home/summarybot/github-notify-ml/
+ExecStart=/home/summarybot/github-notify-ml/instance/digest.sh
+
+[Install]
+WantedBy=summarybot.timer
