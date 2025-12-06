@@ -3,10 +3,10 @@
     "digest:sunday": {
       "topic": "GitHub Activity Summary",
       "sources": [
-        { 
+        {
           "repoList": "https://raw.githubusercontent.com/swicg/activity-summary-bot/refs/heads/main/repositories.json",
           "eventFilter": {
-            "notlabel": ["editorial", "skip-digest"]
+            "notlabel": ["editorial", "Skip Digest", "skip digest"]
           }
         }
       ]
