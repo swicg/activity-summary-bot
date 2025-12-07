@@ -16,6 +16,7 @@
   "swicg/miscellany",
   "swicg/forums",
   "swicg/activitypub-e2ee",
+  "swicg/activitypub-api",
   "swicg/activitypub-html-discovery",
   "swicg/activitypub-trust-and-safety",
   "swicg/activitypub-website-taskforce",
