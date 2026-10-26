@@ -15,5 +15,5 @@ else
   exit 1
 fi
 
-python3 test-email.py "emelia@brandedcode.com"
+python3 send-test-email.py "emelia@brandedcode.com"
 
