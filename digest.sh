@@ -15,4 +15,4 @@ else
   print "env file not found: $ENV_FILE"
 fi
 
-python3 index.py Sunday
+python3 index.py "$(LC_ALL=C date +%A)"
