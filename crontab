@@ -1,0 +1,6 @@
+# Per-user crontab for the summarybot user (no user field).
+# install as root (replaces summarybot's existing crontab):  crontab -u summarybot instance/crontab
+# or edit in place:  crontab -u summarybot -e
+#
+# Sundays at 12:00 server time: pull config and send the weekly digest.
+0 12 * * SUN /home/summarybot/github-notify-ml/instance/digest.sh >> /home/summarybot/digest.log 2>&1

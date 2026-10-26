@@ -1,0 +1,12 @@
+# Rotates the digest log written by the cron entry in instance/crontab.
+# install as root:  cp instance/logrotate /etc/logrotate.d/summarybot-digest
+/home/summarybot/digest.log {
+    monthly
+    rotate 12
+    compress
+    delaycompress
+    missingok
+    notifempty
+    su summarybot summarybot
+    create 0640 summarybot summarybot
+}
