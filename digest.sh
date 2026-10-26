@@ -8,6 +8,10 @@ cd /home/summarybot/github-notify-ml
 # Load python: 
 source "$PWD/.venv/bin/activate"
 
+if ! git -C instance pull --ff-only --quiet; then
+  echo "warning: config pull failed, using existing config" >&2
+fi
+
 ENV_FILE="instance/.env"
 if test -f "$ENV_FILE"; then
   source $ENV_FILE
