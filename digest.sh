@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
-# Lint specified *.sh files or with-shebang in the repo.
+# Pull latest config and send the weekly activity digest.
 
 set -euo pipefail
 set -a
 
 cd /home/summarybot/github-notify-ml
-# Load python: 
 source "$PWD/.venv/bin/activate"
 
 if ! git -C instance pull --ff-only --quiet; then
@@ -14,9 +13,10 @@ fi
 
 ENV_FILE="instance/.env"
 if test -f "$ENV_FILE"; then
-  source $ENV_FILE
+  source "$ENV_FILE"
 else
-  print "env file not found: $ENV_FILE"
+  echo "env file not found: $ENV_FILE" >&2
+  exit 1
 fi
 
 python3 index.py "$(LC_ALL=C date +%A)"
